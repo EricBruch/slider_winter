@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Slider Example</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/img_slider.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/picture_show.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/activities.css'>
+    <script src='scripts/main.js'></script>
+    <script src='scripts/img_slider.js'></script>
+    <script src='scripts/picture_show.js'></script>
+    <script src='scripts/activities.js'></script>
+</head>
+
+<body onload="initializePage()">
+    <!--    Start Page with Slider  -->
+    <header class="slider-bg">
+        <h1 class="main-heading">Welcome to Winter-Wonder-Land in Hallstadt</h1>
+        <div id="slider-img-add-here" class="slider-container">
+
+            <div id="slider-icons-add-here" class="slider-icons-container">
+
+            </div>
+        </div>
+        <!--    Navbar    -->
+        <img class="navigation-bar-open-img" onclick="showNavbar()" src="img/navigation_bar/bars-solid.svg">
+        <nav id="navbar" class="navigation-bar-hide-container">
+            <a href="#picture-show-gallery">picture-gallery</a>
+            <a href="#activities">Activities</a>
+            <a href="#">Accomodation</a>
+            <img class="navbar-close-icon" onclick="hideNavbar()" src="img/navigation_bar/close_icon.svg">
+        </nav>
+    </header>
+    <!--    Picture Show Section -->
+    <section id="picture-show-gallery" class="picture-show-section-container">
+        <h2 class="section-headline">Make yourself an overview of the town by enjoying these wonderfull pictures</h2>
+        <div class="picture-show-slideshow">
+            <div id="picture-show-display-here" class="picture-show-display-img">
+                <div class="picture-show-close-picture-container">
+                    <span id="picture-show-close-picture" class="picture-show-close-picture"
+                        onclick="showPictureClosePicture()">X</span>
+                </div>
+                <!--    picture-show displayed img  -->
+            </div>
+            <div id="picture-show-add-pictures-here" class="picture-show-picture-overview">
+                <!--    picture-show imgs  -->
+            </div>
+        </div>
+    </section>
+    <!--    Activtites section  -->
+    <section id="activities" class="activities-bg">
+        <h2 class="section-headline">Create Your own activities list based on the available activities in
+            Winter-Wonder-Land</h2>
+        <div class="activities-container">
+            <div class="activity-container">
+                <h3>Your activities List</h3>
+                <ul id="activities-add-choosen-here">
+                    <!--    choosen activities come here    -->
+                </ul>
+            </div>
+            <div class="activity-container">
+                <h3>Activities to choose from</h3>
+                <ul id="activities-add-choose-from-here">
+                    <!--    chooseable activities come here    -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

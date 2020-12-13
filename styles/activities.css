@@ -1,0 +1,39 @@
+.activities-bg {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.activities-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.btn_activity {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkgrey;
+    color: blue;
+    font-size: 0.8em;
+    height: 20px;
+}
+
+.activity-list-obj {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.activity-container {
+    width: 40%;
+}
+
+.activity-text-container {
+    margin: 0;
+}
+
+.activity-list-choosen-obj {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
